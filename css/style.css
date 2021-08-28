@@ -26,7 +26,6 @@ body {
 
 .contenedor_total {
   display: grid;
-  background: #e4e4e4;
 }
 
 .banner img {
@@ -43,7 +42,7 @@ body {
 }
 .parties img {
   width: 350px;
-  height: 380px;
+  height: 400px;
   margin-top: 0px;
   border-radius: 6px;
   margin: 15px;
@@ -159,12 +158,13 @@ nav a:hover {
 }
 
 h1 {
-  margin: 5px auto;
+  margin-top: 5px;
   align-items: center;
   display: table;
   font-size: 24px;
   color: #e735aa;
   font-family: Arial, Helvetica, sans-serif;
+  margin-bottom: 50px;
   text-decoration-style: solid;
 }
 
@@ -174,8 +174,7 @@ h1 span {
 
 h2 {
   margin-top: 5%;
-  margin-left: 2%;
-  margin-right: 2%;
+  margin-left: 10px;
   display: flex;
   font-size: 16px;
   color: #179ce9;
@@ -188,7 +187,6 @@ h2 {
 p {
   margin-top: 5%;
   margin-left: 2%;
-  margin-right: 2%;
   text-align: justify;
   font-size: 14px;
   color: #179ce9;
@@ -201,22 +199,21 @@ h3 {
   font-size: 14px;
   color: #179ce9;
   font-family: Arial, Helvetica, sans-serif;
-  margin-left: 2%;
-  margin-right: 2%;
 }
 
 .button {
+  background-color: #179ce9;
   margin-top: 8px;
   border: none;
   color: white;
-  width: 90px;
-  height: 30px;
+  width: 130px;
+  height: 40px;
   text-align: center;
   text-decoration: none;
-  font-size: 12px;
+  font-size: 14px;
   cursor: pointer;
   align-content: center;
-  border-radius: 6px;
+  border-radius: 10px;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -224,23 +221,14 @@ h3 {
   margin-left: 33%;
   margin-bottom: 10px;
   font-family: Arial, Helvetica, sans-serif;
-  background: #179ce9;
-  background: linear-gradient(0deg, #179ce9 0%, #e735aa 100%);
-  border: none;
 }
 
 .button:hover {
-  background: #179ce9;
-  box-shadow: 4px 4px 6px 0 rgba(255, 255, 255, 0.5),
-    -4px -4px 6px 0 rgba(116, 125, 136, 0.5),
-    inset -4px -4px 6px 0 rgba(255, 255, 255, 0.2),
-    inset 4px 4px 6px 0 rgba(0, 0, 0, 0.4);
+  background-color: #179ce9;
+  opacity: 0.8;
+  box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.24),
+    0 17px 50px 0 rgba(0, 0, 0, 0.19);
 }
-.button:before {
-  height: 0%;
-  width: 2px;
-}
-
 .contenedor {
   /*float: left;
   width: 33%;*/
@@ -253,8 +241,7 @@ h3 {
 }
 
 .contenedor-bparties {
-  margin-top: -15px;
-  margin-bottom: 15px;
+  margin-top: 0px;
   max-width: 100%;
   display: grid;
   grid-template-columns: repeat(2, 1fr) 200px repeat(2, 1fr);
@@ -265,6 +252,7 @@ h3 {
 
 .bparties-a {
   grid-area: 3 / 1 / span 2 / span 1;
+  background-color: #e735aa;
 }
 .bparties-a img {
   width: 250px;
@@ -272,6 +260,7 @@ h3 {
 }
 .bparties-b {
   grid-area: 3 / 2 / span 1 / span 1;
+  background-color: aqua;
 }
 .bparties-b img {
   width: 250px;
@@ -279,12 +268,50 @@ h3 {
 }
 .bparties-c {
   grid-area: 4 / 2 / span 1 / span 1;
+  background-color: brown;
 }
 .bparties-c img {
   width: 250px;
   height: 250px;
 }
 .bparties-textblock {
+  grid-area: -3 / -4 / span 2 / span 2;
+  background-color: white;
+}
+
+.contenedor-excursions {
+  max-width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr) 200px repeat(2, 1fr);
+  grid-template-rows: auto 1px 200px 200px;
+  grid-gap: 1rem;
+  margin-left: 15%;
+}
+.excursions-a {
+  grid-area: 3 / 1 / span 2 / span 1;
+  background-color: #e735aa;
+}
+.excursions-a img {
+  width: 250px;
+  height: 416px;
+}
+.excursions-b {
+  grid-area: 3 / 2 / span 1 / span 1;
+  background-color: aqua;
+}
+.excursions-b img {
+  width: 250px;
+  height: 200px;
+}
+.excursions-c {
+  grid-area: 4 / 2 / span 1 / span 1;
+  background-color: brown;
+}
+.excursions-c img {
+  width: 250px;
+  height: 200px;
+}
+.excursions-textblock {
   grid-area: -3 / -4 / span 2 / span 2;
   background-color: white;
 }
@@ -415,8 +442,24 @@ h3 {
   }
 }
 
+@media screen and (max-width: 480px) {
+  section {
+    margin-top: 50px;
+    width: 100%;
+  }
+  nav {
+    display: none;
+  }
+  .logo {
+    display: none;
+  }
+  #topNav {
+    display: block;
+  }
+}
+
 .contenedor_animation {
-  margin-top: 0px;
+  margin-top: 3%;
   display: flex;
   justify-content: center;
   width: auto;
@@ -692,19 +735,6 @@ footer a:hover {
 .footer-middle {
   padding-top: 1em;
   color: white;
-}
-
-@media screen and (max-width: 768px) {
-  .mainfooter,
-  .row {
-    padding: 0.5em 0.5em;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .mainfooter {
-    text-align: center;
-  }
 }
 
 /*Social Icons */

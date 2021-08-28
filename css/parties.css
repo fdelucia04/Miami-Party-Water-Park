@@ -1,0 +1,206 @@
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.block__body_all {
+  display: -ms-grid;
+  display: grid;
+  background: #e4e4e4;
+}
+
+.block__body__excursions {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #e4e4e4;
+}
+
+.block__body__excursions__details {
+  margin-top: 15px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: (1fr)[2];
+      grid-template-rows: repeat(2, 1fr);
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  grid-gap: 30px;
+}
+
+figure.card {
+  position: relative;
+  width: 300px;
+  height: 410px;
+  background-image: var(--image-src);
+  background-position: 50% 50%;
+  background-size: 125%;
+  -webkit-transition: background 400ms ease;
+  transition: background 400ms ease;
+  -webkit-box-shadow: 0 6.7px 5.3px rgba(0, 0, 0, 0.03), 0 22.3px 17.9px rgba(0, 0, 0, 0.05), 0 100px 80px rgba(0, 0, 0, 0.07);
+          box-shadow: 0 6.7px 5.3px rgba(0, 0, 0, 0.03), 0 22.3px 17.9px rgba(0, 0, 0, 0.05), 0 100px 80px rgba(0, 0, 0, 0.07);
+  overflow: hidden;
+}
+
+figure.card:hover figcaption {
+  -webkit-transform: translateY(0px);
+          transform: translateY(0px);
+}
+
+figure.card--1:hover {
+  background-position: 50% 100%;
+}
+
+figure.card--1 figcaption {
+  bottom: 0;
+  -webkit-transform: translateY(80px);
+          transform: translateY(80px);
+}
+
+figure.card--2 {
+  background-size: 110%;
+}
+
+figure.card--2:hover {
+  background-position: 50% -100%;
+}
+
+figure.card--2 figcaption {
+  top: 0;
+  -webkit-transform: translateY(-80px);
+          transform: translateY(-80px);
+}
+
+figure.card--3 {
+  background-size: 115%;
+}
+
+figure.card--3:hover {
+  background-position: -100% 50%;
+}
+
+figure.card--3 figcaption {
+  left: 0;
+  -webkit-transform: translateX(-180px);
+          transform: translateX(-180px);
+}
+
+figure.card--4:hover {
+  background-position: 100% 50%;
+}
+
+figure.card--4 figcaption {
+  right: 0;
+  -webkit-transform: translateX(180px);
+          transform: translateX(180px);
+}
+
+figure.card--1 figcaption, figure.card--2 figcaption {
+  width: 100%;
+  height: 80px;
+  padding: 15px 20px;
+}
+
+figure.card--3 figcaption, figure.card--4 figcaption {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 180px;
+  height: 100%;
+  padding: 20px 15px;
+}
+
+figure.card figcaption {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  background: #282828;
+  -webkit-transition: -webkit-transform 400ms ease;
+  transition: -webkit-transform 400ms ease;
+  transition: transform 400ms ease;
+  transition: transform 400ms ease, -webkit-transform 400ms ease;
+}
+
+figure.card figcaption .block__info {
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+figure.card figcaption .block__info h3 {
+  font-size: 0.8rem;
+  margin-top: 0.5%;
+  margin-bottom: 1px;
+  color: #179ce9;
+}
+
+figure.card figcaption .block__info span {
+  color: white;
+  font-size: 0.8rem;
+}
+
+figure.card figcaption .block__info p {
+  margin-top: 7%;
+  margin-left: 0%;
+  text-align: left;
+  font-size: 0.8rem;
+  color: white;
+}
+
+.btn {
+  cursor: pointer;
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  font-size: 0.65rem;
+  font-weight: bold;
+  letter-spacing: 0.025rem;
+  text-transform: uppercase;
+  color: white;
+  background-color: black;
+  border: none;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.btn:hover {
+  background-color: #1b1919;
+}
+
+.btn:focus {
+  outline: 1px dashed #179ce9;
+  outline-offset: 3px;
+}
+
+@media only screen and (max-width: 900px) {
+  .block__body__excursions {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: start;
+  }
+  .block__body__excursions__details {
+    -ms-grid-rows: (1fr)[4];
+        grid-template-rows: repeat(4, 1fr);
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    grid-gap: 40px;
+    padding: 80px 0;
+  }
+}
+/*# sourceMappingURL=parties.css.map */
