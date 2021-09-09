@@ -1,5 +1,11 @@
 body {
   margin: 0;
+  background-color: #e4e4e4;
+  font-family: "Balsamiq Sans", cursive;
+}
+
+.body_index {
+  background-color: #e4e4e4;
 }
 
 .logo img {
@@ -26,12 +32,13 @@ body {
 
 .contenedor_total {
   display: grid;
+  background: #e4e4e4;
 }
 
 .banner img {
-  display: flex;
+  display: grid;
   width: 100%;
-  height: 300px;
+  height: 100%;
   background-color: none;
 }
 .banner_party img {
@@ -42,7 +49,7 @@ body {
 }
 .parties img {
   width: 350px;
-  height: 400px;
+  height: 380px;
   margin-top: 0px;
   border-radius: 6px;
   margin: 15px;
@@ -51,19 +58,6 @@ body {
 .parties img:hover {
   box-shadow: 0 10px 16px 0 rgba(0, 0, 0, 0.24),
     0 17px 50px 0 rgba(0, 0, 0, 0.19);
-}
-
-.caja3 {
-  border: 2px #000 solid;
-  padding: 10px 0;
-  margin: 20px 0;
-  border-radius: 15px;
-}
-.caja4 {
-  border: 2px #000 solid;
-  padding: 10px 0;
-  margin: 20px 0;
-  border-radius: 15px;
 }
 
 label {
@@ -100,6 +94,7 @@ textarea {
   justify-content: space-between;
   width: 100%;
   align-items: center;
+  background-color: white;
 }
 
 .header_content {
@@ -109,10 +104,11 @@ textarea {
   height: 100%;
 }
 
+/*Styles Menu*/
 .menu {
   height: 50%;
   background-size: cover;
-  background-color: #fff;
+  background-color: white;
   margin-left: 50%;
   margin-right: 50%;
 }
@@ -151,20 +147,16 @@ nav a:hover {
     right: aut;
   }
 }
+/*End Styles Menu*/
 
-.body_index {
-  background-image: url("images/beach.jpg");
-  background-size: 100% 100%;
-}
-
+/*Styles Text*/
 h1 {
-  margin-top: 5px;
+  margin: 5px auto;
   align-items: center;
   display: table;
-  font-size: 24px;
+  font-size: 26px;
   color: #e735aa;
   font-family: Arial, Helvetica, sans-serif;
-  margin-bottom: 50px;
   text-decoration-style: solid;
 }
 
@@ -173,8 +165,10 @@ h1 span {
 }
 
 h2 {
-  margin-top: 5%;
-  margin-left: 10px;
+  margin-top: 1%;
+  margin-left: 2%;
+  margin-right: 2%;
+  margin-bottom: 5%;
   display: flex;
   font-size: 16px;
   color: #179ce9;
@@ -183,10 +177,21 @@ h2 {
   font-family: Arial, Helvetica, sans-serif;
   font-weight: bold;
 }
+h4 {
+  font-family: Arial, Helvetica, sans-serif;
+}
+h5 {
+  color: white;
+  text-align: center;
+  font-size: 22px;
+  padding: 10px;
+}
 
 p {
-  margin-top: 5%;
+  margin-top: 5px;
   margin-left: 2%;
+  margin-right: 2%;
+  margin-bottom: 3%;
   text-align: justify;
   font-size: 14px;
   color: #179ce9;
@@ -194,26 +199,73 @@ p {
 }
 
 h3 {
-  margin-top: 10%;
+  margin-top: 5%;
+  margin-bottom: 3%;
   text-align: justify;
   font-size: 14px;
   color: #179ce9;
   font-family: Arial, Helvetica, sans-serif;
+  margin-left: 2%;
+  margin-right: 2%;
 }
 
-.button {
+/*End Styles Text*/
+
+/*Styles Info Index*/
+
+.info_pag {
   background-color: #179ce9;
+  margin-bottom: 0;
+}
+.text_MPB p {
+  margin-top: 5%;
+  color: white;
+  font-size: 18px;
+  text-align: left;
+  margin-left: 10%;
+  margin-right: 10%;
+  font-family: "Balsamiq Sans", cursive;
+}
+
+.img_info {
+  justify-content: right;
+}
+.img_info img {
+  width: 100%;
+  padding: 20px;
+}
+
+@media (min-width: 900px) {
+  .info_pag {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding: 5px;
+  }
+
+  .text_MPB {
+    grid-column: span 2;
+    grid-row: span 2;
+  }
+  .img_info {
+    grid-column: span 2;
+    grid-row: span 2;
+  }
+}
+
+/*End Styles Info Index*/
+
+.button {
   margin-top: 8px;
   border: none;
   color: white;
-  width: 130px;
-  height: 40px;
+  width: 90px;
+  height: 30px;
   text-align: center;
   text-decoration: none;
-  font-size: 14px;
+  font-size: 12px;
   cursor: pointer;
   align-content: center;
-  border-radius: 10px;
+  border-radius: 6px;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -221,14 +273,23 @@ h3 {
   margin-left: 33%;
   margin-bottom: 10px;
   font-family: Arial, Helvetica, sans-serif;
+  background: #179ce9;
+  background: linear-gradient(0deg, #179ce9 0%, #e735aa 100%);
+  border: none;
 }
 
 .button:hover {
-  background-color: #179ce9;
-  opacity: 0.8;
-  box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.24),
-    0 17px 50px 0 rgba(0, 0, 0, 0.19);
+  background: #179ce9;
+  box-shadow: 4px 4px 6px 0 rgba(255, 255, 255, 0.5),
+    -4px -4px 6px 0 rgba(116, 125, 136, 0.5),
+    inset -4px -4px 6px 0 rgba(255, 255, 255, 0.2),
+    inset 4px 4px 6px 0 rgba(0, 0, 0, 0.4);
 }
+.button:before {
+  height: 0%;
+  width: 2px;
+}
+
 .contenedor {
   /*float: left;
   width: 33%;*/
@@ -240,81 +301,51 @@ h3 {
   flex-wrap: wrap;
 }
 
-.contenedor-bparties {
-  margin-top: 0px;
-  max-width: 100%;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr) 200px repeat(2, 1fr);
-  grid-template-rows: auto 1px 250px 250px;
-  grid-gap: 1rem;
-  margin-left: 15%;
+/*Styles Boat Parties*/
+
+@media (min-width: 900px) {
+  main {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  }
+
+  .info1 {
+    grid-column: span 2;
+    grid-row: span 2;
+  }
+
+  .figure1 {
+    grid-column: span 3;
+    grid-row: span 2;
+  }
 }
 
-.bparties-a {
-  grid-area: 3 / 1 / span 2 / span 1;
-  background-color: #e735aa;
+.figure-img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  padding: 0px;
 }
-.bparties-a img {
-  width: 250px;
-  height: 516px;
-}
-.bparties-b {
-  grid-area: 3 / 2 / span 1 / span 1;
-  background-color: aqua;
-}
-.bparties-b img {
-  width: 250px;
-  height: 250px;
-}
-.bparties-c {
-  grid-area: 4 / 2 / span 1 / span 1;
-  background-color: brown;
-}
-.bparties-c img {
-  width: 250px;
-  height: 250px;
-}
-.bparties-textblock {
-  grid-area: -3 / -4 / span 2 / span 2;
-  background-color: white;
+.figure2,
+.figure1,
+.figure3 {
+  margin: 0 0 0rem;
 }
 
-.contenedor-excursions {
-  max-width: 100%;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr) 200px repeat(2, 1fr);
-  grid-template-rows: auto 1px 200px 200px;
-  grid-gap: 1rem;
-  margin-left: 15%;
-}
-.excursions-a {
-  grid-area: 3 / 1 / span 2 / span 1;
-  background-color: #e735aa;
-}
-.excursions-a img {
-  width: 250px;
-  height: 416px;
-}
-.excursions-b {
-  grid-area: 3 / 2 / span 1 / span 1;
-  background-color: aqua;
-}
-.excursions-b img {
-  width: 250px;
-  height: 200px;
-}
-.excursions-c {
-  grid-area: 4 / 2 / span 1 / span 1;
-  background-color: brown;
-}
-.excursions-c img {
-  width: 250px;
-  height: 200px;
-}
-.excursions-textblock {
-  grid-area: -3 / -4 / span 2 / span 2;
+.info1 {
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 5px;
   background-color: white;
 }
+.info-link {
+  text-decoration: none;
+  color: #ff9900;
+}
+
+/*End Styles Boat Parties*/
+
+/*Styles Menu Responsive*/
 
 .navigation {
   width: 100%;
@@ -375,7 +406,9 @@ h3 {
   background-color: white;
   top: -7px;
 }
-
+.menulist a {
+  color: white;
+}
 .menuitems {
   padding-top: 12px;
   padding-bottom: 12px;
@@ -425,9 +458,9 @@ h3 {
   display: none;
 }
 
-@media screen and (max-width: 927px) {
+@media screen and (max-width: 1280px) {
   section {
-    margin-top: 50px;
+    margin-top: 0px;
     width: 100%;
     /* background-color: aqua; */
   }
@@ -442,9 +475,9 @@ h3 {
   }
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 768px) {
   section {
-    margin-top: 50px;
+    margin-top: 0px;
     width: 100%;
   }
   nav {
@@ -458,11 +491,32 @@ h3 {
   }
 }
 
+@media screen and (max-width: 320px) {
+  section {
+    margin-top: 0px;
+    width: 100%;
+  }
+  nav {
+    display: none;
+  }
+  .logo {
+    display: none;
+  }
+  #topNav {
+    display: block;
+  }
+}
+
+/*End Styles Menu Responsive*/
+
+/*Styles Animation Boat*/
+
 .contenedor_animation {
-  margin-top: 3%;
+  margin-top: 0px;
   display: flex;
   justify-content: center;
   width: auto;
+  background-color: #49b1ee;
 }
 
 .animacion {
@@ -706,7 +760,9 @@ h3 {
   }
 }
 
-/*FOOTER*/
+/*End Styles Animation Boat*/
+
+/*Styles Footer*/
 
 footer {
   background: -webkit-linear-gradient(59deg, #179ce9, #0a6599);
@@ -737,7 +793,20 @@ footer a:hover {
   color: white;
 }
 
-/*Social Icons */
+@media screen and (max-width: 768px) {
+  .mainfooter,
+  .row {
+    padding: 0.5em 0.5em;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .mainfooter {
+    text-align: center;
+  }
+}
+
+/*Social Icons Footer*/
 
 ul.social-network {
   list-style: none;
@@ -822,7 +891,9 @@ ul.social-network li {
   color: white;
 }
 
-/*Carousel*/
+/*End Styles Footer*/
+
+/*Styles Carousel Images*/
 
 .container_carousel {
   width: 100%;
@@ -880,6 +951,7 @@ ul.social-network li {
 
 .ftco-section {
   padding: 2em 0;
+  background-color: #e4e4e4;
 }
 
 .img {
@@ -1005,3 +1077,5 @@ ul.social-network li {
 .work:hover .img .icon {
   opacity: 1;
 }
+
+/*End Styles Carousel Images*/

@@ -43,7 +43,6 @@ figure.card {
   position: relative;
   width: 300px;
   height: 410px;
-  background-image: var(--image-src);
   background-position: 50% 50%;
   background-size: 125%;
   -webkit-transition: background 400ms ease;
@@ -169,18 +168,18 @@ figure.card figcaption .block__info p {
   cursor: pointer;
   margin-top: 1rem;
   padding: 0.5rem 1rem;
-  font-size: 0.65rem;
+  font-size: 0.75rem;
   font-weight: bold;
   letter-spacing: 0.025rem;
   text-transform: uppercase;
   color: white;
-  background-color: black;
+  background-color: #179ce9;
   border: none;
   font-family: Arial, Helvetica, sans-serif;
 }
 
 .btn:hover {
-  background-color: #1b1919;
+  background-color: #e735aa;
 }
 
 .btn:focus {
@@ -200,7 +199,7 @@ figure.card figcaption .block__info p {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
     grid-gap: 40px;
-    padding: 80px 0;
+    padding: 30px 0;
   }
 }
 /*# sourceMappingURL=parties.css.map */

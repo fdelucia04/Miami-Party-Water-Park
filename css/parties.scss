@@ -34,7 +34,6 @@ figure.card {
   position: relative;
   width: 300px;
   height: 410px;
-  background-image: var(--image-src);
   background-position: 50% 50%;
   background-size: 125%;
   transition: background 400ms ease;
@@ -139,17 +138,17 @@ figure.card {
   cursor: pointer;
   margin-top: 1rem;
   padding: 0.5rem 1rem;
-  font-size: 0.65rem;
+  font-size: 0.75rem;
   font-weight: bold;
   letter-spacing: 0.025rem;
   text-transform: uppercase;
   color: $color--white;
-  background-color: $background--btn;
+  background-color: $color--font;
   border: none;
   font-family: $font--family;
 }
 .btn:hover {
-  background-color: #1b1919;
+  background-color: $color--rosa;
 }
 .btn:focus {
   outline: 1px dashed $color--font;
@@ -164,6 +163,6 @@ figure.card {
     grid-template-rows: repeat(4, 1fr);
     grid-template-columns: 1fr;
     grid-gap: 40px;
-    padding: 80px 0;
+    padding: 30px 0;
   }
 }

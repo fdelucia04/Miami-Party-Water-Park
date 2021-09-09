@@ -16,12 +16,19 @@
       href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="css/owl.carousel.min.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/4.5.6/css/ionicons.min.css"
     />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="css/iparties.css" />
+    <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
     <header class="header">
@@ -65,240 +72,295 @@
       <div class="banner">
         <img src="images/banner2.jpg" alt="Banner" />
       </div>
-      <section class="body_index">
-        <div class="fiestas">
-          <h1><b>Select Your Party Boat</b></h1>
-          <div class="contenedor">
-            <div class="parties">
-              <img src="images/parties/cinco_mayo.JPG" alt="5May" />
-              <div>
-                <button
-                  onclick="window.location.href='boat_parties.html'"
-                  class="button"
-                >
-                  Details
-                </button>
+      <div class="container_iparties">
+        <div class="row">
+          <div class="col-md-10 col-center">
+            <div
+              id="myCarousel"
+              class="carousel slide"
+              data-ride="carousel"
+              data-interval="0"
+            >
+              <!-- Carousel indicators -->
+              <ol class="carousel-indicators">
+                <li
+                  data-target="#myCarousel"
+                  data-slide-to="0"
+                  class="active"
+                ></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+              </ol>
+              <!-- Wrapper for carousel items -->
+              <div class="carousel-inner">
+                <div class="item active">
+                  <div class="row">
+                    <div class="col-sm-4">
+                      <div class="thumb-wrapper">
+                        <div class="img-box">
+                          <img
+                            src="images/parties/cinco_mayo.JPG"
+                            class="img-responsive"
+                            alt="5May"
+                          />
+                        </div>
+                        <div class="thumb-content">
+                          <h4><b>Cinco de Mayo</b></h4>
+                          <p>
+                            Celebrate Cinco de Mayo with a fiesta theme party
+                            that honors Mexican culture and pride.
+                          </p>
+                          <a href="boat_parties.html" class="btn btn-primary"
+                            >More
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-sm-4">
+                      <div class="thumb-wrapper">
+                        <div class="img-box">
+                          <img
+                            src="images/parties/enamorados.JPG"
+                            class="img-responsive"
+                            alt="PartyLove"
+                          />
+                        </div>
+                        <div class="thumb-content">
+                          <h4><b>Valentine's Day</b></h4>
+                          <p>
+                            Are you single and ready to mingle? Join us at our
+                            party for adults for the Valentine's Day.
+                          </p>
+                          <a href="boat_parties.html" class="btn btn-primary"
+                            >More
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-sm-4">
+                      <div class="thumb-wrapper">
+                        <div class="img-box">
+                          <img
+                            src="images/parties/halloween.JPG"
+                            class="img-responsive"
+                            alt="Halloween"
+                          />
+                        </div>
+                        <div class="thumb-content">
+                          <h4><b>Halloween</b></h4>
+                          <p>
+                            Are you looking for something scary and funny? These
+                            Halloween party is your better option.
+                          </p>
+                          <a href="boat_parties.html" class="btn btn-primary"
+                            >More
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="row">
+                    <div class="col-sm-4">
+                      <div class="thumb-wrapper">
+                        <div class="img-box">
+                          <img
+                            src="images/parties/new_year.JPG"
+                            class="img-responsive"
+                            alt="NewYear"
+                          />
+                        </div>
+                        <div class="thumb-content">
+                          <h4><b>New Year</b></h4>
+                          <p>
+                            Celebrate the new year by observing the Miami Bay
+                            and its great fireworks until sunrise.
+                          </p>
+                          <a href="boat_parties.html" class="btn btn-primary"
+                            >More
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-sm-4">
+                      <div class="thumb-wrapper">
+                        <div class="img-box">
+                          <img
+                            src="images/parties/rumbaton.JPG"
+                            class="img-responsive"
+                            alt="Rumbaton"
+                          />
+                        </div>
+                        <div class="thumb-content">
+                          <h4><b>Rumbaton</b></h4>
+                          <p>
+                            Celebrate the Latin culture of Venezuela and
+                            Colombia to the rhythm of reggaeton and salsa.
+                          </p>
+                          <a href="boat_parties.html" class="btn btn-primary"
+                            >More
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
+              <!-- Carousel controls -->
+              <a
+                class="carousel-control left"
+                href="#myCarousel"
+                data-slide="prev"
+              >
+                <i class="fa fa-angle-left"></i>
+              </a>
+              <a
+                class="carousel-control right"
+                href="#myCarousel"
+                data-slide="next"
+              >
+                <i class="fa fa-angle-right"></i>
+              </a>
             </div>
-            <div class="parties">
-              <img src="images/parties/enamorados.JPG" alt="PartyLove" />
-              <div>
-                <button
-                  onclick="window.location.href='boat_parties.html'"
-                  class="button"
-                >
-                  Details
-                </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="info_pag">
+        <div class="text_MPB">
+          <h5><b>Miami Party Water Park</b></h5>
+          <p>
+            We are a company dedicated to sightseeing tours and boat fun that
+            operates in Downtown Miami and runs throughout the bay.
+          </p>
+          <p>
+            We offer boat trips and parties for all tastes, from parties for
+            adults, relaxing days, water excursions, sunsets or romantic walks.
+            All our tours include photos to immortalize the good times!
+          </p>
+          <p>
+            Dare to live a unique experience with us and enjoy good music,
+            snacks, drinks and lots of fun!
+          </p>
+        </div>
+        <div class="img_info">
+          <img src="images/banner.jpg" />
+        </div>
+      </div>
+    </section>
+    <section class="ftco-section">
+      <div class="container_carousel">
+        <div class="row_carousel">
+          <div class="col-md-12">
+            <div class="hero featured-carousel owl-carousel">
+              <div class="item">
+                <div class="work">
+                  <div
+                    class="img d-flex align-items-center justify-content-center"
+                    style="background-image: url(images/party.jpg)"
+                  ></div>
+                </div>
               </div>
-            </div>
-            <div class="parties">
-              <img src="images/parties/halloween.JPG" alt="Halloween" />
-              <div>
-                <button
-                  onclick="window.location.href='boat_parties.html'"
-                  class="button"
-                >
-                  Details
-                </button>
+              <div class="item">
+                <div class="work">
+                  <div
+                    class="img d-flex align-items-center justify-content-center"
+                    style="background-image: url(images/party3.jpg)"
+                  ></div>
+                </div>
               </div>
-            </div>
-            <div class="parties">
-              <img src="images/parties/new_year.JPG" alt="NewYear" />
-              <div>
-                <button
-                  onclick="window.location.href='boat_parties.html'"
-                  class="button"
-                >
-                  Details
-                </button>
+              <div class="item">
+                <div class="work">
+                  <div
+                    class="img d-flex align-items-center justify-content-center"
+                    style="background-image: url(images/drink2.jpg)"
+                  ></div>
+                </div>
               </div>
-            </div>
-            <div class="parties">
-              <img src="images/parties/rumbaton.JPG" alt="Rumbaton" />
-              <div>
-                <button
-                  onclick="window.location.href='boat_parties.html'"
-                  class="button"
-                >
-                  Details
-                </button>
+              <div class="item">
+                <div class="work">
+                  <div
+                    class="img d-flex align-items-center justify-content-center"
+                    style="background-image: url(images/party6.jpg)"
+                  ></div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="work">
+                  <div
+                    class="img d-flex align-items-center justify-content-center"
+                    style="background-image: url(images/miami.jpg)"
+                  ></div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="work">
+                  <div
+                    class="img d-flex align-items-center justify-content-center"
+                    style="background-image: url(images/drink3.jpg)"
+                  ></div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="work">
+                  <div
+                    class="img d-flex align-items-center justify-content-center"
+                    style="background-image: url(images/miami_beach.jpg)"
+                  ></div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="work">
+                  <div
+                    class="img d-flex align-items-center justify-content-center"
+                    style="background-image: url(images/drink.jpg)"
+                  ></div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="work">
+                  <div
+                    class="img d-flex align-items-center justify-content-center"
+                    style="background-image: url(images/slider-2.jpg)"
+                  ></div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="work">
+                  <div
+                    class="img d-flex align-items-center justify-content-center"
+                    style="background-image: url(images/women_beach.jpg)"
+                  ></div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="work">
+                  <div
+                    class="img d-flex align-items-center justify-content-center"
+                    style="background-image: url(images/drink5.jpg)"
+                  ></div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="work">
+                  <div
+                    class="img d-flex align-items-center justify-content-center"
+                    style="background-image: url(images/women_beach2.jpg)"
+                  ></div>
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </section>
-      <section class="ftco-section">
-        <div class="container_carousel">
-          <div class="row_carousel">
-            <div class="col-md-12">
-              <div class="hero featured-carousel owl-carousel">
-                <div class="item">
-                  <div class="work">
-                    <div
-                      class="
-                        img
-                        d-flex
-                        align-items-center
-                        justify-content-center
-                      "
-                      style="background-image: url(images/party.jpg)"
-                    ></div>
-                  </div>
-                </div>
-                <div class="item">
-                  <div class="work">
-                    <div
-                      class="
-                        img
-                        d-flex
-                        align-items-center
-                        justify-content-center
-                      "
-                      style="background-image: url(images/party3.jpg)"
-                    ></div>
-                  </div>
-                </div>
-                <div class="item">
-                  <div class="work">
-                    <div
-                      class="
-                        img
-                        d-flex
-                        align-items-center
-                        justify-content-center
-                      "
-                      style="background-image: url(images/drink2.jpg)"
-                    ></div>
-                  </div>
-                </div>
-                <div class="item">
-                  <div class="work">
-                    <div
-                      class="
-                        img
-                        d-flex
-                        align-items-center
-                        justify-content-center
-                      "
-                      style="background-image: url(images/party6.jpg)"
-                    ></div>
-                  </div>
-                </div>
-                <div class="item">
-                  <div class="work">
-                    <div
-                      class="
-                        img
-                        d-flex
-                        align-items-center
-                        justify-content-center
-                      "
-                      style="background-image: url(images/miami.jpg)"
-                    ></div>
-                  </div>
-                </div>
-                <div class="item">
-                  <div class="work">
-                    <div
-                      class="
-                        img
-                        d-flex
-                        align-items-center
-                        justify-content-center
-                      "
-                      style="background-image: url(images/drink3.jpg)"
-                    ></div>
-                  </div>
-                </div>
-                <div class="item">
-                  <div class="work">
-                    <div
-                      class="
-                        img
-                        d-flex
-                        align-items-center
-                        justify-content-center
-                      "
-                      style="background-image: url(images/miami_beach.jpg)"
-                    ></div>
-                  </div>
-                </div>
-                <div class="item">
-                  <div class="work">
-                    <div
-                      class="
-                        img
-                        d-flex
-                        align-items-center
-                        justify-content-center
-                      "
-                      style="background-image: url(images/drink.jpg)"
-                    ></div>
-                  </div>
-                </div>
-                <div class="item">
-                  <div class="work">
-                    <div
-                      class="
-                        img
-                        d-flex
-                        align-items-center
-                        justify-content-center
-                      "
-                      style="background-image: url(images/slider-2.jpg)"
-                    ></div>
-                  </div>
-                </div>
-                <div class="item">
-                  <div class="work">
-                    <div
-                      class="
-                        img
-                        d-flex
-                        align-items-center
-                        justify-content-center
-                      "
-                      style="background-image: url(images/women_beach.jpg)"
-                    ></div>
-                  </div>
-                </div>
-                <div class="item">
-                  <div class="work">
-                    <div
-                      class="
-                        img
-                        d-flex
-                        align-items-center
-                        justify-content-center
-                      "
-                      style="background-image: url(images/drink5.jpg)"
-                    ></div>
-                  </div>
-                </div>
-                <div class="item">
-                  <div class="work">
-                    <div
-                      class="
-                        img
-                        d-flex
-                        align-items-center
-                        justify-content-center
-                      "
-                      style="background-image: url(images/women_beach2.jpg)"
-                    ></div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+      </div>
       <script src="js/jquery.min.js"></script>
       <script src="js/popper.js"></script>
       <script src="js/bootstrap.min.js"></script>
       <script src="js/owl.carousel.min.js"></script>
       <script src="js/main.js"></script>
     </section>
+
     <footer class="mainfooter" role="contentinfo">
       <div class="footer-middle">
         <div class="container">
