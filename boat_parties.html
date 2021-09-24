@@ -1,9 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+  <!-- Libraries and styles used -->
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- SEO -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="The best things to do in Miami are activities on boat. We have several parties’ boat and water excursion options to make your stay amazing. Contact us now!"
+    />
     <meta
       name="keywords"
       content="Miami, Party, Boat, Excursions, Summer, Water, Beach, Park, Travel, Holidays"
@@ -20,14 +26,16 @@
       href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="css/animation_boatOcean.css" />
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
+    <!-- Menu -->
     <header class="header">
       <div class="header_content">
         <div class="logo">
           <a title="Home" href="index.html"
-            ><img src="logo_PW.jpg" alt="Logo"
+            ><img src="/images/logo_PW.jpg" alt="Logo"
           /></a>
         </div>
         <div id="topNav" class="navigation">
@@ -60,11 +68,13 @@
         <script src="script.js"></script>
       </div>
     </header>
+    <!-- Banner -->
     <section class="contenedor_total">
       <div class="banner">
         <img src="images/banner2.jpg" alt="Banner" />
       </div>
     </section>
+    <!-- Boat Parties -->
     <main class="main">
       <section class="info1">
         <h2>ARE YOU READY FOR THE BEST 3 HOURS OF YOUR LIFE?</h2>
@@ -84,9 +94,7 @@
           TICKETS ARE $129 PER PERSON (to Rsvp its a $49 deposit per person and
           balance of $80 due at check-in)
         </p>
-        <a href="https://www.eventbrite.com/" class="info-link"
-          >Learn more...</a
-        >
+        <a href="https://www.eventbrite.com/" class="info-link">Schedule...</a>
       </section>
       <figure class="figure1">
         <img class="figure-img" src="images/boat.jpg" alt="Boat" />
@@ -98,29 +106,89 @@
         <img class="figure-img" src="images/drink4.jpg" alt="Drink" />
       </figure>
     </main>
-    <div class="contenedor_animation">
-      <div class="animacion">
-        <div class="background">
-          <div id="bg1">
-            <img class="nube1" src="img/nube1.png" />
-            <img class="nube2" src="img/nube2.png" />
-            <img class="nube3" src="img/nube3.png" />
-          </div>
-          <div class="bg2">
-            <img class="nube1" src="img/nube1.png" />
-            <img class="nube2" src="img/nube2.png" />
-            <img class="nube3" src="img/nube3.png" />
-          </div>
-        </div>
+    <!-- Animation Boat -->
+    <section class="contenedor_animation">
+      <div id="sun"></div>
+      <div id="sunSet"></div>
+      <div id="sky"></div>
+      <div id="horizon"></div>
 
-        <div class="barco">
-          <img id="barcoimg" src="img/Bote.png" />
-        </div>
+      <div id="division"></div>
 
-        <div class="aguafondo"></div>
-        <div class="agua"></div>
+      <div id="water"></div>
+
+      <div id="waterReflectionContainer">
+        <div id="waterReflectionMiddle"></div>
       </div>
-    </div>
+
+      <div id="waterDistance"></div>
+      <div id="oceanRippleContainer"></div>
+      <div id="oceanRipple"></div>
+
+      <div id="wholeship">
+        <div id="ship-container">
+          <div class="ship">
+            <div class="smokestack ss1">
+              <div class="smoke smoke1"></div>
+            </div>
+            <div class="smokestack ss2"><div class="smoke smoke2"></div></div>
+            <div class="smokestack ss3"><div class="smoke smoke3"></div></div>
+            <div class="smokestack ss4"><div class="smoke smoke4"></div></div>
+            <div class="deck">
+              <div class="compartments-lower">
+                <div class="door d1"></div>
+                <div class="door d2"></div>
+                <div class="door d3"></div>
+                <div class="door d4"></div>
+                <div class="door d5"></div>
+                <div class="door d6"></div>
+                <div class="door d7"></div>
+                <div class="door d8"></div>
+                <div class="door d9"></div>
+                <div class="door d10"></div>
+                <div class="door d11"></div>
+                <div class="door d12"></div>
+                <div class="door d13"></div>
+              </div>
+              <div class="compartments-upper">
+                <div class="cph cp1"></div>
+                <div class="cph cp2"></div>
+                <div class="cph cp3"></div>
+                <div class="cph cp4"></div>
+                <div class="cph cp5"></div>
+                <div class="cph cp6"></div>
+                <div class="cph cp7"></div>
+                <div class="cph cp8"></div>
+                <div class="cph cp9"></div>
+                <div class="cph cp10"></div>
+                <div class="cph cp11"></div>
+                <div class="cph cp12"></div>
+              </div>
+              <div class="roof"></div>
+            </div>
+            <div class="hull">
+              <div class="hull-top">
+                <div class="porthole p1"></div>
+                <div class="porthole p2"></div>
+                <div class="porthole p3"></div>
+                <div class="porthole p4"></div>
+                <div class="porthole p5"></div>
+                <div class="porthole p6"></div>
+                <div class="porthole p7"></div>
+                <div class="porthole p8"></div>
+                <div class="porthole p9"></div>
+                <div class="porthole p10"></div>
+                <div class="porthole p11"></div>
+                <div class="porthole p12"></div>
+                <div class="porthole p13"></div>
+                <div class="porthole p14"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Footer -->
     <footer class="mainfooter" role="contentinfo">
       <div class="footer-middle">
         <div class="container">

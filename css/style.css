@@ -77,18 +77,6 @@ label {
   justify-content: center;
 }
 
-textarea {
-  width: 380px;
-  height: 150px;
-  background: #002e5b;
-  border: 2px solid #f6f6f6;
-  padding: 10px;
-  margin-top: 5px;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 12px;
-  color: #ffffff;
-}
-
 .header {
   display: flex;
   justify-content: space-between;
@@ -305,8 +293,8 @@ h3 {
 
 @media (min-width: 900px) {
   main {
-    margin-top: 2%;
-    margin-bottom: 2%;
+    margin-top: 0px;
+    margin-bottom: 0px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
   }
@@ -342,7 +330,7 @@ h3 {
 }
 .info-link {
   text-decoration: none;
-  color: #ff9900;
+  color: #fa1db0;
 }
 
 /*End Styles Boat Parties*/
@@ -417,15 +405,13 @@ h3 {
   text-decoration: none;
   list-style: none;
   font-family: Arial, Helvetica, sans-serif;
-  font-weight: 300;
   font-size: 16px;
   display: inline-block;
   position: relative;
   text-align: center;
+  align-items: center;
   color: #fff;
-  opacity: 0;
   transition: all 0.5s ease-in-out;
-  width: 200px;
 }
 
 .menuitems:after {
@@ -475,6 +461,11 @@ h3 {
   #topNav {
     display: block;
   }
+  .banner img {
+    margin-top: 50px;
+    width: 100%;
+    height: 250px;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -490,6 +481,11 @@ h3 {
   }
   #topNav {
     display: block;
+  }
+  .banner img {
+    margin-top: 50px;
+    width: 100%;
+    height: 150px;
   }
 }
 
@@ -507,262 +503,14 @@ h3 {
   #topNav {
     display: block;
   }
+  .banner img {
+    margin-top: 50px;
+    width: 100%;
+    height: 150px;
+  }
 }
 
 /*End Styles Menu Responsive*/
-
-/*Styles Animation Boat*/
-
-.contenedor_animation {
-  margin-top: 0px;
-  display: flex;
-  justify-content: center;
-  width: auto;
-  background-color: #49b1ee;
-}
-
-.animacion {
-  width: 100%;
-  height: 320px;
-  background-image: url(img/background.png);
-  position: relative;
-  overflow: hidden;
-}
-
-.background {
-  position: absolute;
-  width: 1450px;
-  height: 300px;
-  display: inline-block;
-  animation-name: nubesAnimation;
-  animation-duration: 20s;
-  animation-iteration-count: infinite;
-  animation-timing-function: linear;
-  -webkit-animation-name: nubesAnimation;
-  -webkit-animation-duration: 20s;
-  -webkit-animation-iteration-count: infinite;
-  -webkit-animation-timing-function: linear;
-}
-
-.bg1 {
-  display: inline-block;
-  position: relative;
-  height: 300px;
-  width: 720px;
-}
-
-.bg2 {
-  display: inline-block;
-  position: relative;
-  height: 300px;
-  width: 720px;
-}
-
-.nube1 {
-  position: absolute;
-  left: 50px;
-  top: 10px;
-  display: inline-block;
-}
-
-.nube2 {
-  position: absolute;
-  left: 325px;
-  top: 80px;
-  display: inline-block;
-}
-
-.nube3 {
-  position: absolute;
-  left: 550px;
-  top: 0px;
-  display: inline-block;
-}
-
-.barco {
-  position: relative;
-  width: 250px;
-  height: 250px;
-  top: 50px;
-  left: 0px;
-
-  -webkit-animation-name: barcoAnimation;
-  -webkit-animation-duration: 4s;
-  -webkit-animation-iteration-count: infinite;
-  -webkit-animation-timing-function: linear;
-  animation-name: barcoAnimation;
-  animation-duration: 4s;
-  animation-iteration-count: infinite;
-  animation-timing-function: linear;
-}
-
-#barcoimg {
-  position: absolute;
-  top: 25px;
-
-  -webkit-animation-name: entradaAnimation;
-  -webkit-animation-duration: 3s;
-  -webkit-animation-iteration-count: 1;
-  -webkit-animation-fill-mode: forwards;
-  animation-name: entradaAnimation;
-  animation-duration: 3s;
-  animation-iteration-count: 1;
-  animation-fill-mode: forwards;
-}
-
-#aguafondo {
-  position: absolute;
-  background-image: url(img/agua-fondo.png);
-  background-repeat: repeat-x;
-  z-index: 4;
-  width: 775px;
-  height: 84px;
-  left: -22px;
-  top: 250px;
-
-  animation-name: aguaAnimation;
-  animation-duration: 3s;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
-
-  -webkit-animation-name: aguaAnimation;
-  -webkit-animation-duration: 3s;
-  -webkit-animation-iteration-count: infinite;
-  -webkit-animation-direction: alternate;
-}
-
-#agua {
-  position: absolute;
-  background-image: url(img/agua-frente.png);
-  background-repeat: repeat-x;
-  z-index: 5;
-  width: 775px;
-  height: 158px;
-  left: -25px;
-  top: 250px;
-
-  animation-name: aguaAnimation;
-  animation-duration: 3s;
-  animation-iteration-count: infinite;
-  animation-direction: alternate-reverse;
-  animation-timing-function: linear;
-
-  -webkit-animation-name: aguaAnimation;
-  -webkit-animation-duration: 3s;
-  -webkit-animation-iteration-count: infinite;
-  -webkit-animation-direction: alternate-reverse;
-  -webkit-animation-timing-function: linear;
-}
-
--webkit-@keyframes nubesAnimation {
-  from {
-    left: 0px;
-  }
-  to {
-    left: -720px;
-  }
-}
-
-@keyframes nubesAnimation {
-  from {
-    left: 0px;
-  }
-  to {
-    left: -720px;
-  }
-}
-
--webkit-@keyframes entradaAnimation {
-  from {
-    left: -150px;
-  }
-  to {
-    left: 10px;
-  }
-}
-
-@keyframes entradaAnimation {
-  from {
-    left: -150px;
-  }
-  to {
-    left: 10px;
-  }
-}
-
--webkit-@keyframes barcoAnimation {
-  0% {
-    top: 55px;
-  }
-  50% {
-    top: 70px;
-  }
-  100% {
-    top: 55px;
-  }
-}
-
-@keyframes barcoAnimation {
-  0% {
-    top: 55px;
-  }
-  50% {
-    top: 70px;
-  }
-  100% {
-    top: 55px;
-  }
-}
-
--webkit-@keyframes aguaAnimation {
-  0% {
-    top: 250px;
-    left: -25px;
-  }
-  50% {
-    top: 257px;
-    left: -22px;
-  }
-  100% {
-    top: 250px;
-    left: -18px;
-  }
-}
-
-@keyframes aguaAnimation {
-  0% {
-    top: 250px;
-    left: -25px;
-  }
-  50% {
-    top: 257px;
-    left: -22px;
-  }
-  100% {
-    top: 250px;
-    left: -18px;
-  }
-}
-
--webkit-@keyframes fadein {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
-@keyframes fadein {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
-/*End Styles Animation Boat*/
 
 /*Styles Footer*/
 
