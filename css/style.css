@@ -543,6 +543,24 @@ footer a:hover {
   color: white;
 }
 
+.footer-pad h4 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 22px;
+  margin-top: 0px;
+  margin-bottom: 10px;
+}
+
+.col-md-3 h4 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 22px;
+  margin-top: 0px;
+  margin-bottom: 10px;
+}
+
+.col-md-12 p {
+  margin-bottom: 0px;
+}
+
 @media screen and (max-width: 768px) {
   .mainfooter,
   .row {
@@ -567,7 +585,7 @@ ul.social-network {
 
 ul.social-network li {
   display: inline;
-  margin: 0 5px;
+  margin: 0 0;
 }
 
 .social-network a.icoFacebook:hover {
